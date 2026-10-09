@@ -8,7 +8,7 @@
 - MSSV: 2A202602791
 - Email: tiendung3t@gmail.com
 - Link repo (fork): https://github.com/Tiendung3tzz/K4-L2L3-DAY23-TongTranTienDung-2A202602791-SensorFusion
-- Commit hash nộp (`git rev-parse HEAD`): xem giá trị HEAD sau khi push commit CP6 cuối.
+- Commit hash nộp (`git rev-parse HEAD`): 7854fe8468055c8b5eed69f1136cdd92393d8509
 
 ## Tóm tắt kết quả
 
