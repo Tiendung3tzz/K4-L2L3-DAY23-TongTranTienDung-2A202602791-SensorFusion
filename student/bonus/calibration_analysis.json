@@ -1,0 +1,44 @@
+[
+  {
+    "level": "baseline",
+    "dy_m": 0.0,
+    "yaw_deg": 0.0,
+    "candidate_pairs": 862,
+    "gate_pass": 102,
+    "gate_accept_rate": 0.11832946635730858,
+    "innovation_mean_px": 262.4792605928854,
+    "innovation_p95_px": 481.00437015709406,
+    "rmse": 0.14560669541848809,
+    "matches": 72,
+    "ghost_track_frames": 0,
+    "missed_gt_frames": 13
+  },
+  {
+    "level": "mild",
+    "dy_m": 0.15,
+    "yaw_deg": 0.5,
+    "candidate_pairs": 862,
+    "gate_pass": 18,
+    "gate_accept_rate": 0.02088167053364269,
+    "innovation_mean_px": 266.9421158965155,
+    "innovation_p95_px": 502.45247300664266,
+    "rmse": 0.1271048978050481,
+    "matches": 72,
+    "ghost_track_frames": 0,
+    "missed_gt_frames": 13
+  },
+  {
+    "level": "strong",
+    "dy_m": 0.3,
+    "yaw_deg": 1.0,
+    "candidate_pairs": 862,
+    "gate_pass": 18,
+    "gate_accept_rate": 0.02088167053364269,
+    "innovation_mean_px": 268.1988224829835,
+    "innovation_p95_px": 530.9210553599596,
+    "rmse": 0.1271048978050481,
+    "matches": 72,
+    "ghost_track_frames": 0,
+    "missed_gt_frames": 13
+  }
+]

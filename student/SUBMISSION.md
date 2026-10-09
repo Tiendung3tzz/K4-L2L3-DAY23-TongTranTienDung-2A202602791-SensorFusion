@@ -51,7 +51,28 @@ File per-mode `metrics_lidar.json`, `metrics_fused.json`, `grade_run_lidar.log`,
 Liệt kê phần bonus đã làm, file bằng chứng trong `student/bonus/` và kết quả chính
 (xem [RUBRIC.md](../RUBRIC.md) mục 2). Không làm thì ghi "Không".
 
-- 
+- **Trực quan hóa track và đo trên BEV/ảnh camera (+3):** Đã tạo
+  `student/bonus/track_bev_before_camera.png`,
+  `student/bonus/track_bev_after_camera.png` và
+  `student/bonus/track_camera_projection.png`. Ở frame 31, track ID 4 thay
+  đổi `3.1365 m` sau camera EKF update; mũi tên đỏ trên ảnh chỉ hướng hiệu
+  chỉnh từ state sau LiDAR sang state fused.
+- **Phân tích calibration (+4):** Bảng đầy đủ nằm trong
+  `student/bonus/calibration_analysis.csv` và `.json`, biểu đồ ở
+  `student/bonus/calibration_effect.png`. Trên frame 0–39, seed 0, ba mức là
+  baseline `(dy=0 m, yaw=0°)`, mild `(0.15 m, 0.5°)` và strong `(0.30 m, 1°)`.
+  Innovation trung bình lần lượt là `262.48`, `266.94`, `268.20 px`, p95 là
+  `481.00`, `502.45`, `530.92 px`; tỉ lệ cặp qua gate giảm từ `11.83%`
+  xuống `2.09%`. Đây là triệu chứng calibration lệch: residual tăng và
+  Mahalanobis gate chặn hầu hết camera update. RMSE fused lần lượt là
+  `0.1456`, `0.1271`, `0.1271 m`; RMSE không tăng ở hai mức lệch vì gate đã
+  loại phần lớn update sai, nên phải đọc cùng innovation và gate rate.
+- **Export track sang CVAT (+3):** Đã xuất qua
+  `fusion_lab.export_cvat.export_tracks_json` tại
+  `student/bonus/cvat_tracks.json`, gồm snapshot track cho frame 0–39 và
+  sensor pass LiDAR/camera. CVAT web hiện yêu cầu đăng nhập để import và chụp
+  ảnh xác nhận; ảnh import/CVAT proof sẽ được bổ sung ngay sau bước đăng nhập
+  tài khoản CVAT.
 
 ## Khai báo sử dụng AI (bắt buộc)
 

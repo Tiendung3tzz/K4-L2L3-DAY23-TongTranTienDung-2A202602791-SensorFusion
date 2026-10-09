@@ -1,0 +1,15 @@
+{
+  "frames": [
+    0,
+    39
+  ],
+  "selected_frame": 31,
+  "selected_track": 4,
+  "camera_update_delta_m": 3.1364705161937874,
+  "baseline_fused_rmse": 0.14560669541848809,
+  "calibration_levels": [
+    "baseline",
+    "mild",
+    "strong"
+  ]
+}
