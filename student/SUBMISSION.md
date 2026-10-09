@@ -4,9 +4,9 @@
 
 ## Thông tin học viên
 
-- Họ tên: Tong Tran Tien Dung
+- Họ tên: Tống Trần Tiến Dũng
 - MSSV: 2A202602791
-- Email:
+- Email: tiendung3t@gmail.com
 - Link repo (fork): https://github.com/Tiendung3tzz/K4-L2L3-DAY23-TongTranTienDung-2A202602791-SensorFusion
 - Commit hash nộp (`git rev-parse HEAD`): xem giá trị HEAD sau khi push commit CP6 cuối.
 
